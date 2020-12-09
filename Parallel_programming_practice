@@ -1,0 +1,25 @@
+def teacher1():
+  print("Mr. Annajiat Alim")
+teacher1()
+
+def teacher2():
+  print("Mr. Benson Mutie")
+teacher2()
+
+print("Serial Programming Example")
+
+print("Parallel Programming Code Start")
+
+import multiprocessing
+
+multiprocessing.cpu_count()
+
+process1=multiprocessing.Process(target=teacher1)
+process2=multiprocessing.Process(target=teacher2)
+
+
+process1.start()
+process2.start()
+
+process1.join()
+process2.join()
